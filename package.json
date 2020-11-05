@@ -1,0 +1,10 @@
+{
+  "name": "leonfrederic_3_05112020",
+  "version": "1.0.0",
+  "description": "Troisième projet de la formation développeur web d'openClassRoom",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/app.scss ./assets/css/app.css"
+  },
+  "author": "LEON Frédéric",
+  "license": "ISC"
+}
