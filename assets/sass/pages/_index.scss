@@ -49,7 +49,7 @@
     margin:0 0 20px 10px;
     background-color: $gray-light;
     box-shadow: 1px 3px 8px #d9d9d9;
-    border-radius: 20px;
+    border-radius: $b-radius;
     font-weight: bold;
   }
 
@@ -72,5 +72,79 @@
   }
   &__content {
     margin-left: 25px;
+  }
+}
+
+.restos {
+  background-color: $gray;
+  padding: 25px;
+
+  h1 {margin: 40px 0 25px;}
+
+  &__card {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: $b-radius;
+    box-shadow: 1px 1px 5px #c8c8c8;
+    overflow: hidden;
+  }
+
+  &__card-img {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: 0;
+      bottom: 0;
+    }
+
+    span {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      padding: 10px 10px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #c8c8c8;
+      font-weight: bold;
+      font-size: 0.9rem;
+      background-color: #99E2D0;
+      color: #23997D;
+      z-index: 2;
+    }
+  }
+
+  &__card-footer {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: white;
+  }
+
+  &__card-name {
+    flex: 1;
+
+    &-title {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    &-subtitle { font-weight: lighter; }
+  }
+
+  &__card-like {
+    position: relative;
+    height: 25px;
+    width: 30px;
+
+    i {
+      position: absolute;
+      font-size: 1.5rem;
+    }
+
+    .fas.fa-heart {opacity: 0}
   }
 }
