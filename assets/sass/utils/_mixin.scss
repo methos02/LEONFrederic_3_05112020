@@ -3,3 +3,15 @@
     @content;
   }
 }
+
+@mixin m-screen {
+  @media screen and (min-width: map-get($breakpoints, m)){
+    @content;
+  }
+}
+
+@mixin xl-screen {
+  @media screen and (min-width: map-get($breakpoints, xl)){
+    @content;
+  }
+}

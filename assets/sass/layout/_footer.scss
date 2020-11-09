@@ -6,6 +6,12 @@
   &__items {
     display: flex;
     flex-direction: column;
+
+    @include m-screen  { text-align: center; }
+  }
+
+  .h2 {
+    @include m-screen  {  text-align: center; }
   }
 
   &__item {

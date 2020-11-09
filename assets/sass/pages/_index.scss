@@ -9,6 +9,7 @@
     padding: 20px 0;
     color: $gray-dark;
     background-color: $gray;
+    cursor: pointer;
   }
 
   &__input {
@@ -39,10 +40,13 @@
   &__cards {
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: space-around;
+
+    @include m-screen { flex-direction: row}
   }
 
   &__card {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 25px 30px;
@@ -51,12 +55,16 @@
     box-shadow: 1px 3px 8px #d9d9d9;
     border-radius: $b-radius;
     font-weight: bold;
+
+    @include xl-screen {
+      flex-basis: 30%;
+    }
   }
 
   &__puce {
     display: inline-block;
     position: absolute;
-    left: 0;
+    left: -10px;
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -81,13 +89,26 @@
 
   h1 {margin: 40px 0 25px;}
 
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include m-screen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   &__card {
     display: inline-block;
-    width: 100%;
     margin-bottom: 20px;
     border-radius: $b-radius;
     box-shadow: 1px 1px 5px #c8c8c8;
     overflow: hidden;
+
+    @include m-screen { width: 48%; }
+    @include xl-screen { width: 23%; }
   }
 
   &__card-img {
