@@ -8,5 +8,8 @@
     position: absolute;
     left: 25px;
     top: 25px;
+    transition: transform 300ms;
+
+    &:hover {transform: scale(1.20)}
   }
 }

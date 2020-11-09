@@ -19,10 +19,18 @@
     @include xs-screen { padding: 5px 10px; }
     @include m-screen { padding: 40px 15vh; }
 
+    @for $i from 2 through 20 {
+      > :nth-child(#{$i}) {
+        animation-delay: #{$i * 50}ms;
+      }
+    }
+
     &-title {
       font-weight: normal;
       font-size: 1rem;
       margin: 20px 0;
+
+      @include start_cards_load;
 
       &::after {
         content: '';
@@ -43,6 +51,8 @@
       overflow: hidden;
       border-radius: 15px;
       box-shadow: 1px 3px 8px #d9d9d9;
+
+      @include start_cards_load;
 
       > div {padding: 10px}
 
@@ -96,5 +106,7 @@
   &__order {
     text-align: center;
     margin: 40px 0;
+
+    @include start_cards_load;
   }
 }

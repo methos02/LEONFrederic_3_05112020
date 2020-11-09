@@ -1,0 +1,17 @@
+@keyframes resto_cards_load {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin start_cards_load {
+  animation: resto_cards_load 150ms linear;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: both;
+}

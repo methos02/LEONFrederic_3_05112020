@@ -8,4 +8,7 @@
   font-weight: bold;
   font-size: 1.03rem;
   cursor: pointer;
+  transition: transform ease-in-out 300ms;
+
+  &:hover { transform: scale(1.05)}
 }
