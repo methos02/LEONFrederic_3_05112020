@@ -3,4 +3,10 @@
   text-align: center;
   box-shadow: 1px 1px 5px #9f9f9f;
   z-index: 2;
+
+  i {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+  }
 }

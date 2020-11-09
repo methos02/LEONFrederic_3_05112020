@@ -8,7 +8,11 @@ $gray-dark : #353535;
 
 $b-radius: 20px;
 
+$dish-init: 55px;
+$dish-anim:100px;
+
 $breakpoints : (
-        tablette: 768px,
+        xs: 365px,
+        m: 768px,
         pc: 991px,
 )

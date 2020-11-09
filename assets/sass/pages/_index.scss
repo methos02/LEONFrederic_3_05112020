@@ -82,6 +82,7 @@
   h1 {margin: 40px 0 25px;}
 
   &__card {
+    display: inline-block;
     width: 100%;
     margin-bottom: 20px;
     border-radius: $b-radius;
