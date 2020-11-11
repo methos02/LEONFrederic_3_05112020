@@ -1,0 +1,39 @@
+.loader {
+  display: flex;
+  position: relative;
+
+  > * {margin: 0 5px}
+
+  @for $i from 2 through 3 {
+    > :nth-child(#{$i}):after {
+      animation-delay: #{$i * 200}ms;
+    }
+  }
+
+  > :nth-child(1):after {  background-color: $primary;}
+  > :nth-child(2):after {  background-color: $secondary;}
+  > :nth-child(3):after {  background-color: $tertiary;}
+}
+
+.loader-puce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-puce:after {
+  content: '';
+  display: inline-block;
+  transform: scale(0.5);
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation: puce-animate 600ms infinite ease-in-out;
+  -webkit-animation: puce-animate 600ms infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes puce-animate {
+  0% { transform: scale(0.5); }
+  100% { transform: scale(1); }
+}

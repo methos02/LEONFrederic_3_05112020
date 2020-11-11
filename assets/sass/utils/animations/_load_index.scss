@@ -1,0 +1,39 @@
+.anim_index_body {
+  overflow: hidden;
+  height: 100vh;
+  animation: key-load-body 0ms 3s ease-in-out forwards;
+  -webkit-animation: key-load-body 0ms 3s ease-in-out forwards;
+}
+
+@keyframes key-load-body {
+  0% {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  100% {
+    overflow: inherit;
+    height: inherit;
+  }
+}
+
+.anim_index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: $gray-light;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  animation: key-load-index 300ms 3s ease-in-out forwards;
+  -webkit-animation: key-load-index 300ms 3s ease-in-out forwards;
+}
+
+@keyframes key-load-index {
+  0% { left: 0 }
+  100% {
+    left: -100%;
+    animation-play-state: paused;
+  }
+}
