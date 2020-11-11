@@ -1,3 +1,9 @@
+.anim_load_fade > div, .anim_load_fade > h2{
+  animation: key_load_fade 150ms linear;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
 @keyframes key_load_fade {
   from {
     opacity: 0;
@@ -8,10 +14,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.anim_load_fade > div, .anim_load_fade > h2{
-  animation: key_load_fade 150ms linear;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
 }

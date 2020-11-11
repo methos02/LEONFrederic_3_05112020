@@ -1,0 +1,15 @@
+$btn-shadow-gray: #9f9f9f;
+
+@mixin btn-shadow($gray) {
+  box-shadow: 1px 3px 8px $gray;
+}
+
+.anim-hover-btn {
+  @include btn-shadow($btn-shadow-gray);
+  transition: opacity 200ms, box-shadow 200ms;
+
+  &:hover {
+    opacity: 0.85;
+    @include btn-shadow(darken($btn-shadow-gray, 100%));
+  }
+}
