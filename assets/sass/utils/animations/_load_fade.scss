@@ -1,4 +1,4 @@
-@keyframes resto_cards_load {
+@keyframes key_load_fade {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -10,8 +10,8 @@
   }
 }
 
-@mixin start_cards_load {
-  animation: resto_cards_load 150ms linear;
-  animation-fill-mode: backwards;
+.anim_load_fade > div, .anim_load_fade > h2{
+  animation: key_load_fade 150ms linear;
+  animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }

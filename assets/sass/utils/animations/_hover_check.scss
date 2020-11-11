@@ -1,0 +1,38 @@
+$width-check: 55px;
+$width-price : 70px;
+
+.anim_hover_check {
+  & .anim_hover_check-titles {
+    width: 100%;
+    transition: width ease-in-out 300ms;
+  }
+
+  & .anim_hover_check-price { width: $width-price;}
+
+  & .anim_hover_check-check {
+    transition: width ease-in-out 300ms, right ease-in-out 300ms;
+    width: $width-check;
+    right: - $width-check;
+  }
+
+  &:hover {
+    & .anim_hover_check-titles {
+      width: calc(100% - #{$width-check + $width-price - 20px});
+    }
+
+    & .anim_hover_check-check {
+      right: 0;
+    }
+
+    & .anim_hover_check-icon {
+      animation: key_hover_check-icon 300ms linear;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes key_hover_check-icon {
+  from { transform: rotate(0); }
+  to { transform: rotate(1turn); }
+}

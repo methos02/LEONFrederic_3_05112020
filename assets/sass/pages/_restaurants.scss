@@ -19,18 +19,10 @@
     @include xs-screen { padding: 5px 10px; }
     @include m-screen { padding: 40px 15vh; }
 
-    @for $i from 2 through 20 {
-      > :nth-child(#{$i}) {
-        animation-delay: #{$i * 50}ms;
-      }
-    }
-
     &-title {
       font-weight: normal;
       font-size: 1rem;
       margin: 20px 0;
-
-      @include start_cards_load;
 
       &::after {
         content: '';
@@ -51,14 +43,14 @@
       overflow: hidden;
       border-radius: 15px;
       box-shadow: 1px 3px 8px #d9d9d9;
-
-      @include start_cards_load;
+      cursor: pointer;
 
       > div {padding: 10px}
 
-      &-titles {
-        width : calc(100% - #{ $dish-init });
-        text-overflow: inherit;
+      @for $i from 2 through 20 {
+        > :nth-child(#{$i}) {
+          animation-delay: #{$i * 50}ms;
+        }
       }
 
       &-title {
@@ -83,7 +75,6 @@
 
       &-price {
         display: inline-block;
-        width: $dish-init;
         align-self: flex-end;
         font-weight: bold;
         color: $gray-dark;
@@ -91,14 +82,14 @@
 
       &-check {
         position: absolute;
+        display: flex;
         top: 0;
         bottom: 0;
-        right: - $dish-init;
-        width: 50px;
-        line-height: 36px;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
         background-color: $tertiary;
         color: white;
+        font-size: 1.2rem;
       }
     }
   }
@@ -106,7 +97,5 @@
   &__order {
     text-align: center;
     margin: 40px 0;
-
-    @include start_cards_load;
   }
 }
