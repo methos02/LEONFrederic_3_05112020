@@ -1,5 +1,16 @@
+$duration: 150;
+$delay: 50;
+
+.anim_load_fade {
+  @for $i from 2 through 20 {
+    > :nth-child(#{$i}) {
+      animation-delay: #{$i * $delay }ms;
+    }
+  }
+}
+
 .anim_load_fade > div, .anim_load_fade > h2{
-  animation: key_load_fade 150ms linear;
+  animation: key_load_fade #{ $duration }ms linear;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }

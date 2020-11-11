@@ -53,12 +53,6 @@
 
       > div {padding: 10px}
 
-      @for $i from 2 through 20 {
-        > :nth-child(#{$i}) {
-          animation-delay: #{$i * 50}ms;
-        }
-      }
-
       &-title {
         font-size: 1rem;
         margin-bottom: 5px;
