@@ -2,7 +2,6 @@
   overflow: hidden;
   height: 100vh;
   animation: key-load-body 0ms 3s ease-in-out forwards;
-  -webkit-animation: key-load-body 0ms 3s ease-in-out forwards;
 }
 
 @keyframes key-load-body {
@@ -28,7 +27,6 @@
   width: 100vw;
   z-index: 2;
   animation: key-load-index 300ms 3s ease-in-out forwards;
-  -webkit-animation: key-load-index 300ms 3s ease-in-out forwards;
 }
 
 @keyframes key-load-index {

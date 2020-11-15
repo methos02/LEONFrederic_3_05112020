@@ -27,7 +27,6 @@ $width-price : 70px;
     & .anim_hover_check-icon {
       animation: key_hover_check-icon 300ms linear;
       animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
     }
   }
 }

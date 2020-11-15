@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Troisième projet de la formation développeur web d'openClassRoom",
   "scripts": {
-    "sass": "sass --watch ./assets/sass/app.scss ./assets/css/app.css"
+    "sass": "sass --watch ./assets/sass/app.scss ./assets/sass/app.css",
+    "prefixer": "postcss ./assets/sass/app.css --use autoprefixer -d ./assets/css/"
   },
   "author": "LEON Frédéric",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

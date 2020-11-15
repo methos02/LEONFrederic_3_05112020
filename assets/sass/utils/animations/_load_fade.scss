@@ -12,7 +12,6 @@ $delay: 50;
 .anim_load_fade > div, .anim_load_fade > h2{
   animation: key_load_fade #{ $duration }ms linear;
   animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
 }
 
 @keyframes key_load_fade {

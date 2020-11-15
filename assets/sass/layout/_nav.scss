@@ -5,6 +5,12 @@
   box-shadow: 1px 1px 5px #9f9f9f;
   z-index: 3;
 
+  &__title {
+    font-family: 'Shrikhand', sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 0 15px;
+  }
+
   i {
     position: absolute;
     left: 25px;
