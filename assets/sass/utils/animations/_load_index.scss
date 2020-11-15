@@ -31,8 +31,5 @@
 
 @keyframes key-load-index {
   0% { left: 0 }
-  100% {
-    left: -200%;
-    animation-play-state: paused;
-  }
+  100% { left: -200%; }
 }
