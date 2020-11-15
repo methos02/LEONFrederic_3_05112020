@@ -6,7 +6,9 @@
   position:relative;
   z-index:1;
   cursor: pointer;
+  -webkit-text-stroke: 1px white;
 }
+
 .heart-color{
   position:absolute;
   left:0;
@@ -24,6 +26,7 @@
   transform:scale(1);
   opacity:1;
 }
+
 .heart:hover{
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
